@@ -43,6 +43,6 @@
   </environments>
   <!-- SQL구문이 있는 mapper 파일 연결시킬 것 // 윗부분 value와 이부분 resource 까지만 수정 -->
   <mappers>
-    <mapper resource="db/MemberMapper.xml"/>
+    <mapper resource="com/sangmen/db/MemberMapper.xml"/>
   </mappers>
 </configuration>

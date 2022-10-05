@@ -9,19 +9,19 @@
 	(절대로 겹치면 안됨)
 	namespace에는 내가 연결하고 싶은 DAO 풀네임을 적어주자!
  -->
-<mapper namespace="model.DAO">
+<mapper namespace="com.sangmen.model.DAO">
 
-	<insert id="join" parameterType="model.customerInfor">
+	<insert id="join" parameterType="com.sangmen.model.customerInfor">
 	insert into customer_info
 	values(#{id},#{pw},#{name},#{tel},#{place})
 	</insert>
 	
-	<select id="login" parameterType="model.customerInfor" resultType="customerInfor">
+	<select id="login" parameterType="com.sangmen.model.customerInfor" resultType="customerInfor">
 	select * from customer_info
 	where id=#{id} and pw=#{pw}
 	</select>
 <!-- 	
-	<select id="selectAll" parameterType="model.customerInfor" resultType="customerInfor">
+	<select id="selectAll" parameterType="com.sangmen.model.customerInfor" resultType="customerInfor">
 	select * from customer_info 
 	where id!='admin'
 	</select>

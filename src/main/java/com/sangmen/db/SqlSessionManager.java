@@ -1,4 +1,4 @@
-package db;
+package com.sangmen.db;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,7 +12,7 @@ public class SqlSessionManager {
 	public static SqlSessionFactory sqlSessionFactory;
 	
 	static {
-		String resource = "com/smhrd/db/Mybatis-config.xml";
+		String resource = "com/sangmen/db/Mybatis-config.xml";
 		InputStream inputStream;
 		try {
 			inputStream = Resources.getResourceAsStream(resource);
