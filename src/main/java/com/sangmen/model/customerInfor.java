@@ -1,4 +1,4 @@
-package model;
+package com.sangmen.model;
 
 public class customerInfor {
 
